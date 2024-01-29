@@ -69,24 +69,57 @@
                 <p class="text-muted">Input the urban text for relational triplet extraction, e.g., "Columbia University is a private Ivy league research university in New York City." Input urban entities for knowledge graph completion, e.g., "Entity 1: Columbia University, Point (40.8075, 73.9626)" and "Entity 2: Empire State Building,  Point (40.7484, 73.9857)"</p>
                 <form>
                   <div class="row">
-                    <div class="col-sm-12">
-                      <div class="form-group">
-                        <label for="message">Input urban text for relational triplet extraction</label>
-                        <textarea id="message" class="form-control"></textarea>
+                      <div class="col-sm-12">
+                          <div class="form-group">
+                              <label for="message1">Input urban text for relational triplet extraction</label>
+                              <textarea id="message1" class="form-control">Columbia University is a private Ivy league research university in New York City.</textarea>
+                          </div>
                       </div>
-                    </div>
-                    <div class="col-sm-12">
-                      <button type="submit" class="btn btn-primary"><i class="far fa-lightbulb-on"></i> Relational Triplet Extraction</button>
-                    </div>
-                    <div class="col-sm-12">
-                      <div class="form-group">
-                        <label for="message">Input urban entity 1, urban entity 2 for knowledge graph completion</label>
-                        <textarea id="message" class="form-control"></textarea>
+                      <div class="col-sm-12">
+                          <button type="button" class="btn btn-primary" onclick="completeKnowledgeGraph()"><i class="far fa-lightbulb-on"></i> Relational Triplet Extraction</button>
                       </div>
-                    </div>
-                    <div class="col-sm-12">
-                      <button type="submit" class="btn btn-primary"><i class="far fa-lightbulb-on"></i> Knowlege Graph Completion</button>
-                    </div>
+                      <div class="col-sm-12">
+                          <label for="result1">Result:</label>
+                          <textarea id="result1" class="form-control" readonly></textarea>
+                      </div>
+                      <script>
+                          function completeKnowledgeGraph() {
+                              // Get input text from textarea
+                              var inputText = $('#message1').val();
+
+                              // Process the input text (you might want to implement more sophisticated logic here)
+                              var result = "<Columbia University, locate-in, New York City>";
+
+                              // Display the result in the output textarea
+                              $('#result1').val(result);
+                          }
+                      </script>
+
+                      <div class="col-sm-12">
+                          <div class="form-group">
+                              <label for="message2">Input urban entity 1, urban entity 2 for knowledge graph completion</label>
+                              <textarea id="message2" class="form-control">Entity 1: Columbia University, Point (40.8075, 73.9626)" and "Entity 2: Empire State Building, Point (40.7484, 73.9857).</textarea>
+                          </div>
+                      </div>
+                      <div class="col-sm-12">
+                          <button type="button" class="btn btn-primary" onclick="KGC()"><i class="far fa-lightbulb-on"></i> Knowledge Graph Completion</button>
+                      </div>
+                      <div class="col-sm-12">
+                          <label for="result2">Result:</label>
+                          <textarea id="result2" class="form-control" readonly></textarea>
+                      </div>
+                      <script>
+                          function KGC() {
+                              // Get input text from textarea
+                              var inputText = $('#message2').val();
+
+                              // Process the input text (you might want to implement more sophisticated logic here)
+                              var result2 = "<Columbia University, disconnected, Empire State Building>";
+
+                              // Display the result in the output textarea
+                              $('#result2').val(result2);
+                          }
+                      </script>
                   </div>
                 </form>
               </div>
