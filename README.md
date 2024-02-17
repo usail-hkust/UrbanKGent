@@ -39,6 +39,7 @@ Urban knowledge graph has recently worked as an emerging building block to disti
 
 ## 3 Usage
 
+### Agent Inference
 To run OpenAI LLM agent, you need to set your key in `main_TE/KGC.py`:
 
 ```
@@ -55,6 +56,12 @@ To run the fine-tuned Llama-2 LLM agent, you should put your LLMs model into the
 ```
 python utils/llama_lora_api.py
 python main_KGC/TE.py
+```
+
+### Agent Fine-tuning
+To fine-tune tailored LLM agent, you need to prepare instruction set and put them into './sft_data/', and then finetune the model with LoRA architecture:
+```
+python finetune.py
 ```
 
 Our raw data, fine-tuned LLM adapter are available at "[Google Cloud](https://drive.google.com/drive/folders/1OLK1_8qN_1hNDaBzxPoTkYP5ppIfWXVI?usp=sharing)"
