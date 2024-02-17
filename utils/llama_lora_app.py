@@ -47,8 +47,8 @@ async def create_item(request: Request):
 
     # init model
     if not init:
-        model_path = "/data/llm_models/llama-2-7b-chat-hf"
-        lora_path = "/data/llm_models/llama-2-7b-finetune/"
+        model_path = "../data/llm_models/llama-2-7b-chat-hf"
+        lora_path = "../data/llm_models/llama-2-7b-finetune/"
         tokenizer = AutoTokenizer.from_pretrained(model_path)
         DEFAULT_PAD_TOKEN = "[PAD]"
         DEFAULT_EOS_TOKEN = "</s>"
