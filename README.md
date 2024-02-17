@@ -39,7 +39,7 @@ Urban knowledge graph has recently worked as an emerging building block to disti
 
 ## 3 Usage
 
-To run OpenAI LLM agent, you need to set your key in `mian_TE/KGC.py`:
+To run OpenAI LLM agent, you need to set your key in `main_TE/KGC.py`:
 
 ```
 python main_KGC/TE.py
