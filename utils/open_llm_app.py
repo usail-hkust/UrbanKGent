@@ -37,7 +37,7 @@ async def create_item(request: Request):
         last_model_name = model_name
         model = None
         tokenizer = None
-        model_path = f"/data/llm_models/{model_name}"
+        model_path = f"../data/llm_models/{model_name}"
         print("====================================")
         print(f"Loading model {model_path}...")
         tokenizer = AutoTokenizer.from_pretrained(model_path)
