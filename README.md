@@ -39,29 +39,45 @@ Urban knowledge graph has recently worked as an emerging building block to disti
 
 ## 3 Usage
 
-- To run OpenAI LLM agent, you need to set your key in `mian_TE/KGC.py`:
+To run OpenAI LLM agent, you need to set your key in `mian_TE/KGC.py`:
 
 ```
 python main_KGC/TE.py
 ```
 
-To run the Llama-2 LLM agent, we first open the Llama-2 inferrence local-host api: 
+To run the official Llama-2 LLM agent, you should put your LLMs model into the '/data/llm_models', and then open the Llama-2 inference local-host request: 
 
 ```
 python utils/open_llm_api.py
+python main_KGC/TE.py
 ```
-And then,
+To run the fine-tuned Llama-2 LLM agent, you should put your LLMs model into the '/data/llm_models', and put your LLM adapter into the '/data/llm_model/', and then open the finetuned Llama-2 inference local-host request: 
 ```
+python utils/llama_lora_api.py
 python main_KGC/TE.py
 ```
 
+Our raw data, fine-tuned LLM adapter are available at "[Google Cloud](https://drive.google.com/drive/folders/1OLK1_8qN_1hNDaBzxPoTkYP5ppIfWXVI?usp=sharing)"
+
 ## 4 Citation
+
+If you find our work is useful for your research, please consider citing:
 
 ```
 @article{ning2024urbankgent,
   title={UrbanKGent: A Unified Large Language Model Agent Framework for Urban Knowledge Graph Construction},
   author={Ning, Yansong and Liu, Hao},
   journal={arXiv preprint arXiv:2402.06861},
+  year={2024}
+}
+```
+
+```
+@article{ning2024uukg,
+  title={UUKG: unified urban knowledge graph dataset for urban spatiotemporal prediction},
+  author={Ning, Yansong and Liu, Hao and Wang, Hao and Zeng, Zhenyu and Xiong, Hui},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
   year={2024}
 }
 ```
