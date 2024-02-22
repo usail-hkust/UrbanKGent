@@ -5,7 +5,7 @@
 ![Testing Status](https://img.shields.io/badge/docs-in_progress-green)
 ![Testing Status](https://img.shields.io/badge/pypi_package-in_progress-green)
 ![Testing Status](https://img.shields.io/badge/license-MIT-blue)
-![Hugging Face Models](https://github.com/usail-hkust/UrbanKGent/blob/main/UrbanKGent%20Demo/img/huggingface_UrbanKGent.png)(https://huggingface.co/USAIL-HKUSTGZ/UrbanKGent-13b)
+[![Hugging Face Models](https://github.com/usail-hkust/UrbanKGent/blob/main/UrbanKGent%20Demo/img/huggingface_UrbanKGent.png)](https://huggingface.co/USAIL-HKUSTGZ/UrbanKGent-13b)
 
 </p>
 
