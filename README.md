@@ -1,4 +1,4 @@
-# UrbanKGent: A Unified Large Language Model Agent Framework for Urban Knowledge Graph Construction
+# UrbanKGent: A Unified Large Language Model Agent Framework for Urban Knowledge Graph Construction ([PDF](https://arxiv.org/pdf/2402.06861.pdf))
 
 <p align="center">
 
