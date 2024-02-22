@@ -54,7 +54,31 @@
           </ul>
         </div>
         <h1>Document</h1>
-        <p class="lead">This document help reader deploy the UrbanKGent into local server to provide UrbanKGC service.</p>
+        <p>The detailed document could be found in our Github.</code>:</p>
+
+        <h3>Agent Inference</h3>
+        <p>To run OpenAI LLM agent, you need to set your key in <code>main_TE/KGC.py</code>:</p>
+
+<pre><code>python main_KGC/TE.py
+</code></pre>
+
+<p>To run the official Llama-2 LLM agent, you should put your LLMs model into the '/data/llm_models', and then open the Llama-2 inference local-host request:</p>
+
+<pre><code>python utils/open_llm_api.py
+python main_KGC/TE.py
+</code></pre>
+
+<p>To run the fine-tuned Llama-2 LLM agent, you should put your LLMs model into the '/data/llm_models', and put your LLM adapter into the '/data/llm_model/', and then open the finetuned Llama-2 inference local-host request:</p>
+
+<pre><code>python utils/llama_lora_api.py
+python main_KGC/TE.py
+</code></pre>
+
+<h3>Agent Fine-tuning</h3>
+<p>To fine-tune tailored LLM agent, you need to prepare instruction set and put them into './sft_data/', and then finetune the model with LoRA architecture:</p>
+
+<pre><code>python finetune.py
+</code></pre>
       </div>
     <footer class="footer">
       <div class="footer__copyright">
