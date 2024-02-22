@@ -65,6 +65,8 @@ python finetune.py
 
 Our raw data, fine-tuned LLM adapter are available at "[Google Cloud](https://drive.google.com/drive/folders/1OLK1_8qN_1hNDaBzxPoTkYP5ppIfWXVI?usp=sharing)"
 
+### Agent Downloading <a href="https://huggingface.co/USAIL-HKUSTGZ/UrbanKGent-13b"><img src="https://github.com/usail-hkust/UrbanKGent/blob/main/UrbanKGent%20Demo/img/hugging%20face%20urbankgent.svg" alt="Testing Status" width="100" height="36"></a>
+
 ### Agent Downloading
 [![Testing Status](https://github.com/usail-hkust/UrbanKGent/blob/main/UrbanKGent%20Demo/img/hugging%20face%20urbankgent.svg)](https://huggingface.co/USAIL-HKUSTGZ/UrbanKGent-13b)
 
