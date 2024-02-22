@@ -66,6 +66,23 @@ python finetune.py
 
 Our raw data, fine-tuned LLM adapter are available at "[Google Cloud](https://drive.google.com/drive/folders/1OLK1_8qN_1hNDaBzxPoTkYP5ppIfWXVI?usp=sharing)"
 
+The opensource LLMs in this work could be downloaded from hugging face:
+```
+from huggingface_hub import snapshot_download
+
+repo_id = "baichuan-inc/Baichuan2-13B-Chat"  # 模型在huggingface上的名称
+local_dir = "./models/Baichuan2-13B-Chat"  # 本地模型存储的地址
+local_dir_use_symlinks = False  # 本地模型使用文件保存，而非blob形式保存
+token = "YOUR_KEY"  # 在hugging face上生成的 access token
+
+snapshot_download(
+    repo_id=repo_id,
+    local_dir=local_dir,
+    local_dir_use_symlinks=local_dir_use_symlinks,
+    token=token
+)
+```
+
 ## 4 Citation
 
 If you find our work is useful for your research, please consider citing:
