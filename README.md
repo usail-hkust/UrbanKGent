@@ -66,12 +66,12 @@ python finetune.py
 
 Our raw data, fine-tuned LLM adapter are available at "[Google Cloud](https://drive.google.com/drive/folders/1OLK1_8qN_1hNDaBzxPoTkYP5ppIfWXVI?usp=sharing)"
 
-The opensource LLMs in this work could be downloaded from hugging face:
+The opensource UrbanKGent-13b in this work could be downloaded from hugging face:
 ```
 from huggingface_hub import snapshot_download
 
-repo_id = "baichuan-inc/llama-2-13B-chat-hf"  # 
-local_dir = "./models/llama-2-13B-chat-hft"  # 
+repo_id = "USAIL-HKUSTGZ/UrbanKGent-13b"  # 
+local_dir = "./data/llm_models/UrbanKGent-13b"  # 
 local_dir_use_symlinks = False  #
 token = "YOUR_KEY"  # hugging face access token
 
