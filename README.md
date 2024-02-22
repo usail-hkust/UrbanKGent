@@ -73,7 +73,7 @@ from huggingface_hub import snapshot_download
 repo_id = "baichuan-inc/llama-2-13B-chat-hf"  # 
 local_dir = "./models/llama-2-13B-chat-hft"  # 
 local_dir_use_symlinks = False  #
-token = "YOUR_KEY"  # 在hugging face access token
+token = "YOUR_KEY"  # hugging face access token
 
 snapshot_download(
     repo_id=repo_id,
