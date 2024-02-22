@@ -26,6 +26,7 @@ Urban knowledge graph has recently worked as an emerging building block to disti
 
 <div style="display: flex; justify-content: center;">
   <img src="https://github.com/usail-hkust/UrbanKGent/blob/main/UrbanKGent%20Demo/img/model.png" width="400">
+  <img src="https://github.com/usail-hkust/UrbanKGent/blob/main/UrbanKGent%20Demo/img/intro.png" width="400">
 </div>
 
 
