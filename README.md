@@ -5,8 +5,6 @@
 ![Testing Status](https://img.shields.io/badge/docs-in_progress-green)
 ![Testing Status](https://img.shields.io/badge/pypi_package-in_progress-green)
 ![Testing Status](https://img.shields.io/badge/license-MIT-blue)
-[![Testing Status](https://github.com/usail-hkust/UrbanKGent/blob/main/UrbanKGent%20Demo/img/hugging%20face%20urbankgent.svg)](https://huggingface.co/Babelscape/rebel-large)
-
 </p>
 
 <p align="center">
@@ -67,6 +65,8 @@ python finetune.py
 
 Our raw data, fine-tuned LLM adapter are available at "[Google Cloud](https://drive.google.com/drive/folders/1OLK1_8qN_1hNDaBzxPoTkYP5ppIfWXVI?usp=sharing)"
 
+### Agent Downloading
+[![Testing Status](https://github.com/usail-hkust/UrbanKGent/blob/main/UrbanKGent%20Demo/img/hugging%20face%20urbankgent.svg)](https://huggingface.co/Babelscape/rebel-large)
 The opensource UrbanKGent-13b in this work could be downloaded from hugging face:
 ```
 from huggingface_hub import snapshot_download
