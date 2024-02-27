@@ -51,7 +51,7 @@ parser.add_argument(
     "--evaluation_url", default="https://gpt-api.hkust-gz.edu.cn/v1/chat/completions", type=str
 )
 parser.add_argument(
-    "--evaluation_headers", default={"Content-Type": "application/json", "Authorization": "Bearer 588a313d227543b0b15a5867684340930b43d9715e09400583663c9d034e59ef"},
+    "--evaluation_headers", default={"Content-Type": "application/json", "Authorization": "Bearer Your API-Key"},
 )
 parser.add_argument(
     "--evaluation_model", default="gpt-3.5-turbo", type=str, choices=["llama-2-13b-finetune", "llama-2-7b-finetune", "gpt-3.5-turbo", "text-davinci-003", 'gpt-4', "gpt-4-32k", "llama-2-7b-chat-hf", "llama-2-13b-chat-hf", "llama-2-70b-chat-hf"]
