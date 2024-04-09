@@ -21,4 +21,4 @@ curl -X POST "http://localhost:8000"
 
 if __name__ == '__main__':
     args = parse_args()
-    uvicorn.run(app='open_llm_appKGC:app', host=args.host, port=args.port, workers=args.workers)
+    uvicorn.run(app='open_llm_app:app', host=args.host, port=args.port, workers=args.workers)
