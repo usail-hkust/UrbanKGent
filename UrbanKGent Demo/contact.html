@@ -65,7 +65,7 @@
             <div class="box-simple">
               <div class="icon"><i class="pe-7s-pen"></i></div>
               <div class="content">
-                <h4>I'm the UrbanKG construction agent! What can I help you?</h4>
+                <h4>The online deployment demo of UrbanKGent. I'm the UrbanKG construction agent! What can I help you?</h4>
                 <p class="text-muted">Input the urban text for relational triplet extraction, e.g., "Columbia University is a private Ivy league research university in New York City." Input urban entities for knowledge graph completion, e.g., "Entity 1: Columbia University, Point (40.8075, 73.9626)" and "Entity 2: Empire State Building,  Point (40.7484, 73.9857)"</p>
                 <form>
                   <div class="row">
@@ -122,6 +122,38 @@
                       </script>
                   </div>
                 </form>
+              </div>
+            </div>
+            <div class="box-simple">
+              <div class="icon"><i class="pe-7s-pen"></i></div>
+              <div class="content">
+                <h4>How to deloy UrbanKGent locally?</h4>
+                <p class="text-muted">Open inferrence service locally via runing our opensourced code
+<pre><code>
+import uvicorn
+from multiprocessing import Process
+import argparse
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-host", type=str, default='0.0.0.0')
+    parser.add_argument("-port", type=str, default=8000)
+    parser.add_argument("-workers", type=int, default=1)
+    return parser.parse_args()
+
+if __name__ == '__main__':
+    args = parse_args()
+    uvicorn.run(app='open_llm_app:app', host=args.host, port=args.port, workers=args.workers)
+</code></pre>
+                    Then, you access to UrbanKG construction service via following interface:
+<pre><code>
+curl -X POST "http://localhost:8000" /
+     -H 'Content-Type: application/json' /
+     -d '{"prompt": "Introduce yourself.",
+          "history": [("Helo", "I'm the UrbanKG construction agent! What can I help you?")],
+          "model": "UrbanKGent-13b"}'
+</code></pre>
+                  </p>
               </div>
             </div>
           </div>
