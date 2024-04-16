@@ -128,7 +128,7 @@
               <div class="icon"><i class="pe-7s-pen"></i></div>
               <div class="content">
                 <h4>How to deloy UrbanKGent locally?</h4>
-                <p class="text-muted">Open inferrence service locally via runing our opensourced code
+                <p class="text-muted">Open inferrence service locally via runing our opensourced code:
 <pre><code>
 import uvicorn
 from multiprocessing import Process
@@ -145,7 +145,7 @@ if __name__ == '__main__':
     args = parse_args()
     uvicorn.run(app='open_llm_app:app', host=args.host, port=args.port, workers=args.workers)
 </code></pre>
-                    Then, you access to UrbanKG construction service via following interface:
+                    Then, you can access to UrbanKG construction service via following interface:
 <pre><code>
 curl -X POST "http://localhost:8000" /
      -H 'Content-Type: application/json' /
