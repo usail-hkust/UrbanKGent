@@ -13,7 +13,7 @@
 | **[2 Requirements](#requirements)**
 | **[3 Usage](#usage)**
 | **[4 Citation](#citation)**
-| **[Website](https://htmlpreview.github.io/?https://raw.githubusercontent.com/usail-hkust/UrbanKGent/main/UrbanKGent%20Demo/index.html)** |
+| **[5 Website](https://htmlpreview.github.io/?https://raw.githubusercontent.com/usail-hkust/UrbanKGent/main/UrbanKGent%20Demo/index.html)** |
 
 </p>
 
@@ -63,6 +63,7 @@ To fine-tune tailored LLM agent, you need to prepare instruction set and put the
 ```
 python finetune.py
 ```
+The instruction tuning dataset is consist of trajectory generated in UrbanKGent Inferrence. We provide the example in './sft_data/', and you can construct tailored instruction tuning dataset with the similar format and process.
 
 Our raw data, fine-tuned LLM adapter and constructed UrbanKG are available at "[Google Cloud](https://drive.google.com/drive/folders/1OLK1_8qN_1hNDaBzxPoTkYP5ppIfWXVI?usp=sharing)"
 
@@ -108,3 +109,4 @@ If you find our work is useful for your research, please consider citing:
   year={2024}
 }
 ```
+
