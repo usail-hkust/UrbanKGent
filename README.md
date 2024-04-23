@@ -111,4 +111,4 @@ If you find our work is useful for your research, please consider citing:
 ```
 
 ## 5 Website
-UrbanKGent is a online agent providing urban knowledge graph construction service for the researchers in the urban computing domain. You can visit our [project website][https://htmlpreview.github.io/?https://raw.githubusercontent.com/usail-hkust/UrbanKGent/main/UrbanKGent%20Demo/index.html] to utilize the deployed online UrbanKG construction service.
+UrbanKGent is a online agent providing urban knowledge graph construction service for the researchers in the urban computing domain. You can visit our [project website](https://htmlpreview.github.io/?https://raw.githubusercontent.com/usail-hkust/UrbanKGent/main/UrbanKGent%20Demo/index.html) to utilize the deployed online UrbanKG construction service.
