@@ -128,13 +128,13 @@ if __name__ == "__main__":
     S_Triplet_agent_COT_prompt_all = []
     T_Triplet_agent_COT_prompt_all = []
     F_Triplet_agent_COT_prompt_all = []
-
-    S_Triplet_agent_COT_prompt_all.append(
-        S_Triplet_agent.prompt_construction(data, index, S_Ent_agent.communication(index), S_Rel_agent.communication(index)))
-    T_Triplet_agent_COT_prompt_all.append(
-        T_Triplet_agent.prompt_construction(data, index, T_Ent_agent.communication(index), T_Rel_agent.communication(index)))
-    F_Triplet_agent_COT_prompt_all.append(
-        F_Triplet_agent.prompt_construction(data, index, F_Ent_agent.communication(index), F_Rel_agent.communication(index)))
+    for index in range(len(data)):
+        S_Triplet_agent_COT_prompt_all.append(
+            S_Triplet_agent.prompt_construction(data, index, S_Ent_agent.communication(index), S_Rel_agent.communication(index)))
+        T_Triplet_agent_COT_prompt_all.append(
+            T_Triplet_agent.prompt_construction(data, index, T_Ent_agent.communication(index), T_Rel_agent.communication(index)))
+        F_Triplet_agent_COT_prompt_all.append(
+            F_Triplet_agent.prompt_construction(data, index, F_Ent_agent.communication(index), F_Rel_agent.communication(index)))
 
     S_Triplet_agent.multi_threads_request(data, S_Triplet_agent_COT_prompt_all)
     T_Triplet_agent.multi_threads_request(data, T_Triplet_agent_COT_prompt_all)
