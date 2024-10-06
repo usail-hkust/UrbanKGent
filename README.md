@@ -68,14 +68,14 @@ The instruction tuning dataset is consist of trajectory generated in UrbanKGent 
 Our raw data, fine-tuned LLM adapter and constructed UrbanKG are available at "[Google Cloud](https://drive.google.com/drive/folders/1OLK1_8qN_1hNDaBzxPoTkYP5ppIfWXVI?usp=sharing)"
 
 ### Agent Downloading
-[![Testing Status](https://github.com/usail-hkust/UrbanKGent/blob/main/UrbanKGent%20Demo/img/hugging%20face%20urbankgent.svg)](https://huggingface.co/USAIL-HKUSTGZ/UrbanKGent-13b)
+[![Testing Status](https://github.com/usail-hkust/UrbanKGent/blob/main/UrbanKGent%20Demo/img/hugging%20face%20urbankgent.svg)](https://huggingface.co/collections/usail-hkust/urbankgent-66ffa25a8017c6670390c671)
 
-The opensource UrbanKGent-13b in this work could be downloaded from hugging face:
+The opensource UrbanKGent-7b, UrbanKGent-8b and UrbanKGent-13b in this work could be downloaded from hugging face:
 ```
 from huggingface_hub import snapshot_download
 
-repo_id = "USAIL-HKUSTGZ/UrbanKGent-13b"  # 
-local_dir = "./data/llm_models/UrbanKGent-13b"  # 
+repo_id = "usail-hkust/UrbanKGent-13B"  # "usail-hkust/UrbanKGent-7B", "usail-hkust/UrbanKGent-8B"
+local_dir = "./data/llm_models/UrbanKGent-13B"  # "./data/llm_models/UrbanKGent-7B", "./data/llm_models/UrbanKGent-8B"
 local_dir_use_symlinks = False  #
 token = "YOUR_KEY"  # hugging face access token
 
