@@ -20,7 +20,7 @@
 <a id="introduction"></a>
 ## 1 Introduction
 
-Official code for article "[UrbanKGent: A Unified Large Language Model Agent Framework for Urban Knowledge Graph Construction](https://arxiv.org/pdf/2402.06861.pdf)".
+Official code for NeurIPS 2024 paper "[UrbanKGent: A Unified Large Language Model Agent Framework for Urban Knowledge Graph Construction](https://arxiv.org/pdf/2402.06861.pdf)".
 
 Urban knowledge graph has recently worked as an emerging building block to distill critical knowledge from multi-sourced urban data for diverse urban application scenarios. Despite its promising benefits, urban knowledge graph construction (UrbanKGC) still heavily relies on manual effort, hindering its potential advancement. This paper presents UrbanKGent, a unified large language model agent framework, for urban knowledge graph construction.
 
@@ -95,7 +95,8 @@ If you find our work is useful for your research, please consider citing:
 @article{ning2024urbankgent,
   title={UrbanKGent: A Unified Large Language Model Agent Framework for Urban Knowledge Graph Construction},
   author={Ning, Yansong and Liu, Hao},
-  journal={arXiv preprint arXiv:2402.06861},
+  journal={Advances in Neural Information Processing Systems},
+  volume={37},
   year={2024}
 }
 ```
@@ -106,7 +107,7 @@ If you find our work is useful for your research, please consider citing:
   author={Ning, Yansong and Liu, Hao and Wang, Hao and Zeng, Zhenyu and Xiong, Hui},
   journal={Advances in Neural Information Processing Systems},
   volume={36},
-  year={2024}
+  year={2023}
 }
 ```
 
