@@ -24,11 +24,6 @@ Official code for NeurIPS 2024 paper "[UrbanKGent: A Unified Large Language Mode
 
 Urban knowledge graph has recently worked as an emerging building block to distill critical knowledge from multi-sourced urban data for diverse urban application scenarios. Despite its promising benefits, urban knowledge graph construction (UrbanKGC) still heavily relies on manual effort, hindering its potential advancement. This paper presents UrbanKGent, a unified large language model agent framework, for urban knowledge graph construction.
 
-<div style="display: flex; justify-content: center;">
-  <img src="https://github.com/usail-hkust/UrbanKGent/blob/main/UrbanKGent%20Demo/img/model.png" width="400">
-  <img src="https://github.com/usail-hkust/UrbanKGent/blob/main/UrbanKGent%20Demo/img/intro.png" width="400">
-</div>
-
 
 <a id="requirements"></a>
 ## 2 Requirements
