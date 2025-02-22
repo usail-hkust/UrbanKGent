@@ -87,21 +87,20 @@ snapshot_download(
 If you find our work is useful for your research, please consider citing:
 
 ```
-@article{ning2024urbankgent,
+@inproceedings{ningurbankgent,
   title={UrbanKGent: A Unified Large Language Model Agent Framework for Urban Knowledge Graph Construction},
   author={Ning, Yansong and Liu, Hao},
-  journal={Advances in Neural Information Processing Systems},
-  volume={37},
-  year={2024}
+  booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems}
 }
 ```
 
 ```
-@article{ning2024uukg,
-  title={UUKG: unified urban knowledge graph dataset for urban spatiotemporal prediction},
+@article{ning2023uukg,
+  title={UUKG: Unified urban knowledge graph dataset for urban spatiotemporal prediction},
   author={Ning, Yansong and Liu, Hao and Wang, Hao and Zeng, Zhenyu and Xiong, Hui},
   journal={Advances in Neural Information Processing Systems},
   volume={36},
+  pages={62442--62456},
   year={2023}
 }
 ```
