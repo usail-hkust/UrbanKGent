@@ -62,8 +62,8 @@ def distance(geometry_1, geometry_2):
     centroid2 = get_centroid(geom2)
 
     # 获取两个centroid的坐标
-    coords1 = (centroid1.x, centroid1.y)
-    coords2 = (centroid2.x, centroid2.y)
+    coords1 = (centroid1.y, centroid1.x)  # (纬度, 经度)
+    coords2 = (centroid2.y, centroid2.x)
 
     # 使用Geopy计算地理距离
     distance = geodesic(coords1, coords2).kilometers
