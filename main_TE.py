@@ -218,14 +218,14 @@ if __name__ == "__main__":
     print('done')
 
     data = load_ndjson(DATA_PATH + str(args.dataset) + '.json')
-    extracted_triplet = Triplet_format_agent.memories
+    Extracted_triplet = Triplet_format_agent.memories
     # 首先将 每一条城市数据对应的三元组进行整合
     for index in range(len(data)):
         triplets = []
         pattern__ = r"{\"Triplet 1\"(.*?)\"}}"
-        matche_ = re.search(pattern__, extracted_triplet[index]['response'], re.IGNORECASE | re.DOTALL)
+        matche_ = re.search(pattern__, Extracted_triplet[index]['response'], re.IGNORECASE | re.DOTALL)
         if matche_ ==  None:
-            triplet_json = extracted_triplet[index]['response']
+            triplet_json = Extracted_triplet[index]['response']
             triplets.append(triplet_json)
         else:
             triplet_json = matche_[0]
