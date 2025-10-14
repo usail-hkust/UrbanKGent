@@ -56,7 +56,7 @@ class RTEAgent_NER_Temporal(RTEAgent):
                 {"role": "user",
                  "content": "Given the urban textual sentence: " + str(text) + '\n'},
                 {"role": "user",
-                 "content": "What types of spatial entities are included in this sentence?"
+                 "content": "What types of temporal entities are included in this sentence?"
                             "Temporal entities specifies how thing that can be contained within a period of time, or change in state (e.g. events, periods, acts)."
                             "Return the results with the following format without any other explanation: {\"Temporal entities\": \"[Entity type 1, Entity type 2, ...]\"}"},
             ],
@@ -81,7 +81,7 @@ class RTEAgent_NER_Functional(RTEAgent):
                 {"role": "user",
                  "content": "Given the urban textual sentence: " + str(text) + '\n'},
                 {"role": "user",
-                 "content": "What types of spatial entities are included in this sentence?"
+                 "content": "What types of functional entities are included in this sentence?"
                             "Functional entities specifies any independent party (i.e., person, business entity, governmental entity, or other organization) defined in terms of its function."
                             "Return the results with the following format without any other explanation: {\"Functional entities\": \"[Entity type 1, Entity type 2, ...]\"}"},
             ],
@@ -236,5 +236,6 @@ class RTEAgent_TE_Functional(RTEAgent):
             }
         if "llama" in self.model:
             prompt_completion = self.prompt_gpt_to_llama(prompt_completion)
+
 
         return prompt_completion
